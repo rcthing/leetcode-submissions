@@ -1,0 +1,9 @@
+// Title: Duplicate Emails
+            // Difficulty: Easy
+            // Language: PostgreSQL
+            // Link: https://leetcode.com/problems/duplicate-emails/
+
+-- Write your PostgreSQL query statement below
+SELECT email AS Email FROM Person 
+GROUP BY email
+HAVING COUNT(*) > 1
